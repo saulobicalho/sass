@@ -1,7 +1,11 @@
+//variaveis do sass
+
 $cor-padrao: #c24e4b;
 $cor-auxiliar: #1e2c35;
 $cor-branca: #FFF;
 $raio: 0.3em;
+
+//mixins do sass
 
 @mixin borda-arredondada($raio: 0.3em){
   -webkit-border-radius: $raio;
@@ -11,6 +15,21 @@ $raio: 0.3em;
 @mixin sombra-padrao{
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
+
+@mixin image-replacement{
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+@mixin posicao_zero_absoluto{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
 
 /** Geral **/
 body {
@@ -147,9 +166,7 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include image-replacement;
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -266,11 +283,7 @@ header .container {
   background: url(../imagens/fundo.png);
   background-size: 25px 25px;
   opacity: .15;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
+  @include posicao_zero_absoluto;
   z-index: -1;
 }
 
@@ -345,22 +358,14 @@ footer::after {
   content: "";
   background: url(../imagens/fundo-rodape.png);
   opacity: .02;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
+  @include posicao_zero_absoluto;
   z-index: -1;
 }
 
 footer::before {
   content: "";
   background: $cor-auxiliar;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
+  @include posicao_zero_absoluto;
   z-index: -1;
 }
 
@@ -412,9 +417,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include image-replacement;
   margin-left: 1em;
 }
 

@@ -22,8 +22,8 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid yellow;
-  background: rgba(0, 128, 0, 0.8);
+  border-top: 5px solid #c24e4b;
+  background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
   position: absolute; }
@@ -75,12 +75,12 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: yellow;
+  background: #c24e4b;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold; }
 
@@ -130,7 +130,7 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: green; }
+  background: #1e2c35; }
 
 .planos h2 {
   color: cor-branca; }
@@ -148,7 +148,7 @@ header .container {
 .plano h3 {
   color: cor-branca;
   font-size: 1.8em;
-  background: yellow;
+  background: #c24e4b;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -156,7 +156,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: yellow;
+  color: #c24e4b;
   font-size: 2.75em; }
 
 .itens-plano {
@@ -176,7 +176,7 @@ header .container {
   float: right; }
 
 .plano button {
-  background: yellow;
+  background: #c24e4b;
   border: 0;
   color: cor-branca;
   width: 210px;
@@ -259,7 +259,7 @@ textarea {
 
 .contato button {
   margin: 0 auto;
-  background: yellow;
+  background: #c24e4b;
   border: 0;
   color: cor-branca;
   width: 210px;
@@ -287,7 +287,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: green;
+  background: #1e2c35;
   top: 0;
   left: 0;
   bottom: 0;

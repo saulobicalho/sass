@@ -9,7 +9,7 @@
   background: url(../imagens/fundo.png);
   background-size: 25px 25px;
   opacity: .15;
-  @include posicao_zero_absoluto;
+  @extend %posicao_zero_absoluto;
   z-index: -1;
 }
 
